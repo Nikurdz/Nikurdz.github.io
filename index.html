@@ -90,6 +90,9 @@ section{padding:56px 0}
 .try ul{margin:12px 0 0;padding-left:1.2rem}
 .try li{margin:6px 0}
 .cta-row{margin-top:24px}
+.alt-link{margin-top:12px}
+.alt-link a{display:inline-flex;align-items:center;min-height:48px}
+.web .steps{margin-top:24px}
 .cta-row .btn-main{background:var(--anil);color:#fff}
 @media (prefers-color-scheme:dark){.cta-row .btn-main{background:var(--maiz);color:var(--btn-text)}}
 
@@ -104,6 +107,7 @@ details p{padding:0 22px 20px;color:var(--muted)}
 footer{padding:40px 0 56px;color:var(--muted);font-size:.98rem}
 footer .wrap{display:grid;gap:10px}
 footer nav{display:flex;flex-wrap:wrap;gap:4px 18px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 footer a{display:inline-flex;align-items:center;min-height:48px}
 
 @media (min-width:820px){
@@ -128,6 +132,7 @@ footer a{display:inline-flex;align-items:center;min-height:48px}
       <div class="acts">
         <a class="btn btn-main" href="https://github.com/FrameFlow-app/Aruy-app/releases/latest/download/aruy.apk">Descargar la app (APK)</a>
         <a class="btn btn-ghost" href="#instalar">Cómo instalarla</a>
+        <a class="btn btn-ghost" href="#web">¿Tienes iPhone?</a>
       </div>
     </div>
     <div class="video">
@@ -199,6 +204,33 @@ footer a{display:inline-flex;align-items:center;min-height:48px}
   </div>
 </section>
 
+<section class="trust web" id="web" aria-labelledby="web-titulo">
+  <div class="wrap">
+    <h2 id="web-titulo">¿Tienes iPhone? Prueba Aruy en la web</h2>
+    <p class="lead" style="margin-top:14px">Funciona en Safari y en cualquier navegador, sin descargar nada. Usa las mismas cuentas que la app de Android, así que si ya te registraste, entras igual.</p>
+    <div class="cta-row"><a class="btn btn-main" href="https://frameflow-app.github.io/Aruy-web/" target="_blank" rel="noopener">Abrir Aruy web<span class="sr-only"> (se abre en una pestaña nueva)</span></a></div>
+    <h3 style="margin-top:36px">Instálala en tu iPhone como una app</h3>
+    <ol class="steps">
+      <li><strong>Abre el enlace en Safari.</strong> Tiene que ser Safari; en otros navegadores del iPhone no aparece la opción.</li>
+      <li><strong>Toca el botón Compartir,</strong> el cuadrado con una flecha hacia arriba.</li>
+      <li><strong>Elige “Añadir a pantalla de inicio”</strong> y toca <strong>Añadir</strong>.</li>
+      <li><strong>Abre Aruy desde el ícono</strong> de tu pantalla de inicio, como cualquier otra app.</li>
+    </ol>
+    <p class="note">En Android también puede instalarse desde Chrome (menú ⋮ → “Instalar app”), pero recomendamos la app de Android.</p>
+    <p class="alt-link"><a href="https://frameflow-app.github.io/Aruy-web/#/instalar" target="_blank" rel="noopener">Ver la guía de instalación dentro de la web<span class="sr-only"> (se abre en una pestaña nueva)</span></a></p>
+    <div class="try">
+      <h3>Qué te pedimos probar</h3>
+      <ul>
+        <li>Registrarte o ingresar</li>
+        <li>Buscar un servicio</li>
+        <li>Solicitar un servicio</li>
+        <li>Chatear con el prestador</li>
+      </ul>
+      <p style="margin-top:12px">Si algo falla, escríbenos a <a href="mailto:aruy.ec@gmail.com">aruy.ec@gmail.com</a> y cuéntanos qué pasó.</p>
+    </div>
+  </div>
+</section>
+
 <section aria-labelledby="faq">
   <div class="wrap">
     <h2 id="faq">Preguntas frecuentes</h2>
@@ -217,6 +249,7 @@ footer a{display:inline-flex;align-items:center;min-height:48px}
     <p>Contacto: <a href="mailto:aruy.ec@gmail.com">aruy.ec@gmail.com</a></p>
     <nav aria-label="Enlaces">
       <a href="https://frameflow-app.github.io/Aruy-app/privacidad.html">Política de privacidad</a>
+      <a href="#web">Probar en la web (iPhone)</a>
       <a href="https://github.com/FrameFlow-app/Aruy-app">Repositorio</a>
     </nav>
   </div>
